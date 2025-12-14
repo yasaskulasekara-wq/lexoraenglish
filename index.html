@@ -1,77 +1,1018 @@
 <!DOCTYPE html>
-<html lang="si">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <meta property="og:title" content="Join Lexora English Academy" />
-  <meta property="og:description" content="Click to join the WhatsApp Group." />
-  
-  <title>Join Lexora English Academy</title>
-  <style>
-    :root{--navy:#0C1A3A;--white:#ffffff;--btn:#25D366;} /* WhatsApp Green */
-    
-    body{
-      font-family: "Ayuthaya", "Iskoola Pota", "Malgun Gothic", Arial, sans-serif; /* Sinhala Font Stack */
-      margin:0; 
-      background:var(--navy); 
-      color:var(--white); 
-      display:flex; 
-      align-items:center; 
-      justify-content:center; 
-      min-height:100vh; 
-      padding:20px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexora English Academy - Clean English for Quick Progress</title>
+    <style>
+        /* ===================================
+           LEXORA ENGLISH ACADEMY - STYLESHEET
+           Clean, Academic, University-Style Design
+           =================================== */
 
-    .card{
-      background:var(--white); 
-      color:var(--navy); 
-      width:100%; 
-      max-width:400px; 
-      border-radius:16px; 
-      padding:30px 20px; 
-      box-shadow:0 10px 30px rgba(0,0,0,0.2); 
-      text-align:center;
-    }
+        /* === ROOT VARIABLES === */
+        :root {
+            /* Colors */
+            --primary-navy: #0C1A3A;
+            --secondary-gold: #C9A24D;
+            --bg-white: #FFFFFF;
+            --bg-light-grey: #F5F7FA;
+            --text-main: #1A1A1A;
+            --text-muted: #5A5A5A;
+            
+            /* Typography */
+            --font-heading: "Segoe UI", Arial, sans-serif;
+            --font-body: Arial, sans-serif;
+            
+            /* Spacing */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 3rem;
+            --spacing-xl: 4rem;
+            
+            /* Container */
+            --container-max: 1200px;
+        }
 
-    h1{margin:0 0 15px; font-size:24px; font-weight: 800; line-height: 1.3;}
-    p{margin:8px 0 25px; line-height:1.6; font-size:16px; color: #333;}
-    
-    /* Button Styles */
-    .btn{
-      display:block; 
-      width: 100%;
-      box-sizing: border-box;
-      margin-top:10px; 
-      background:var(--btn); 
-      color:#fff; 
-      padding:18px 20px; 
-      border-radius:50px; 
-      text-decoration:none; 
-      font-weight:700;
-      font-size: 18px;
-      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-      transition: transform 0.1s ease;
-    }
-    
-    .btn:active { transform: scale(0.98); }
+        /* === RESET & BASE STYLES === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .small{font-size:13px; color:#666; margin-top:20px; border-top: 1px solid #eee; padding-top: 15px;}
-  </style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-white);
+        }
+
+        /* === TYPOGRAPHY === */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: var(--spacing-sm);
+            color: var(--primary-navy);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+        }
+
+        p {
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-main);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-navy);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* === LAYOUT UTILITIES === */
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        section {
+            padding: var(--spacing-xl) 0;
+        }
+
+        /* === NAVIGATION === */
+        .navbar {
+            background-color: var(--bg-white);
+            border-bottom: 1px solid #E5E7EB;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: var(--spacing-sm) 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+            color: var(--primary-navy);
+        }
+
+        .tagline {
+            font-size: 0.875rem;
+            color: var(--secondary-gold);
+            margin: 0;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: var(--spacing-md);
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: var(--text-main);
+            font-weight: 500;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--secondary-gold);
+        }
+
+        .nav-cta {
+            margin-left: var(--spacing-sm);
+        }
+
+        /* === BUTTONS === */
+        .btn-primary,
+        .btn-secondary {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-navy);
+            color: var(--bg-white);
+            border-color: var(--primary-navy);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-gold);
+            color: var(--primary-navy);
+            border-color: var(--secondary-gold);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-navy);
+            border-color: var(--primary-navy);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary-navy);
+            color: var(--bg-white);
+        }
+
+        .btn-primary.large,
+        .btn-secondary.large {
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+        }
+
+        /* === HERO SECTION === */
+        .hero {
+            background-color: var(--bg-light-grey);
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .hero-tagline {
+            font-size: 1.5rem;
+            color: var(--secondary-gold);
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--spacing-sm);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* === INTRO SECTION === */
+        .intro-section {
+            background-color: var(--bg-white);
+            text-align: center;
+        }
+
+        .intro-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .intro-content h2 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .intro-content p {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+        }
+
+        /* === SECTION HEADERS === */
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .section-header h2 {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .section-header p {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .section-header.center {
+            text-align: center;
+        }
+
+        /* === COURSES SECTION === */
+        .courses-section {
+            background-color: var(--bg-light-grey);
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+
+        .course-card {
+            background-color: var(--bg-white);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            border: 1px solid #E5E7EB;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-icon {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .course-card h3 {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .course-level {
+            color: var(--secondary-gold);
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .course-card p {
+            color: var(--text-muted);
+            margin-bottom: var(--spacing-md);
+            flex-grow: 1;
+        }
+
+        .course-features {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .course-features li {
+            padding: var(--spacing-xs) 0;
+            color: var(--text-main);
+            border-bottom: 1px solid #F3F4F6;
+        }
+
+        .course-features li:last-child {
+            border-bottom: none;
+        }
+
+        .course-card .btn-secondary {
+            margin-top: auto;
+        }
+
+        /* === WHY SECTION === */
+        .why-section {
+            background-color: var(--bg-white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+
+        .feature-item {
+            position: relative;
+            padding-left: 4rem;
+        }
+
+        .feature-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary-gold);
+            opacity: 0.3;
+        }
+
+        .feature-item h3 {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .feature-item p {
+            color: var(--text-muted);
+        }
+
+        /* === ABOUT SECTION === */
+        .about-section {
+            background-color: var(--bg-light-grey);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+        }
+
+        .about-content h2 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .about-content p {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .about-highlights {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+
+        .highlight-box {
+            background-color: var(--bg-white);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-gold);
+        }
+
+        .highlight-box h3 {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .highlight-box ul {
+            padding-left: var(--spacing-md);
+        }
+
+        .highlight-box li {
+            list-style: disc;
+            color: var(--text-muted);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        /* === METHOD SECTION === */
+        .method-section {
+            background-color: var(--bg-white);
+        }
+
+        .method-intro {
+            max-width: 800px;
+            margin: 0 auto var(--spacing-lg);
+            text-align: center;
+        }
+
+        .method-intro h3 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .method-intro p {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+        }
+
+        .method-principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        .principle-card {
+            background-color: var(--bg-light-grey);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            border-top: 4px solid var(--secondary-gold);
+        }
+
+        .principle-card h4 {
+            color: var(--primary-navy);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .principle-card p {
+            color: var(--text-muted);
+        }
+
+        /* === OUTCOMES SECTION === */
+        .outcomes-section {
+            background-color: var(--bg-light-grey);
+        }
+
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .outcome-card {
+            background-color: var(--bg-white);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+        }
+
+        .outcome-card h3 {
+            margin-bottom: var(--spacing-md);
+            color: var(--primary-navy);
+        }
+
+        .outcome-card ul {
+            padding-left: var(--spacing-md);
+        }
+
+        .outcome-card li {
+            list-style: disc;
+            color: var(--text-muted);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .progress-timeline {
+            max-width: 800px;
+            margin: var(--spacing-xl) auto 0;
+            text-align: center;
+        }
+
+        .progress-timeline h3 {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .timeline {
+            position: relative;
+            padding: var(--spacing-md) 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+            align-items: flex-start;
+        }
+
+        .timeline-marker {
+            min-width: 60px;
+            height: 60px;
+            background-color: var(--secondary-gold);
+            color: var(--bg-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .timeline-content {
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .timeline-content h4 {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .timeline-content p {
+            color: var(--text-muted);
+        }
+
+        /* === FAQ SECTION === */
+        .faq-section {
+            background-color: var(--bg-white);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .faq-item h3 {
+            font-size: 1.125rem;
+            margin-bottom: var(--spacing-sm);
+            color: var(--primary-navy);
+        }
+
+        .faq-item p {
+            color: var(--text-muted);
+        }
+
+        /* === CTA SECTION === */
+        .cta-section {
+            background-color: var(--primary-navy);
+            color: var(--bg-white);
+            text-align: center;
+            padding: var(--spacing-xl) 0;
+        }
+
+        .cta-content h2 {
+            color: var(--bg-white);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .cta-content p {
+            font-size: 1.125rem;
+            color: var(--bg-white);
+            opacity: 0.9;
+            margin-bottom: var(--spacing-md);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: var(--spacing-sm);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-section .btn-primary {
+            background-color: var(--secondary-gold);
+            color: var(--primary-navy);
+            border-color: var(--secondary-gold);
+        }
+
+        .cta-section .btn-primary:hover {
+            background-color: var(--bg-white);
+            color: var(--primary-navy);
+            border-color: var(--bg-white);
+        }
+
+        .cta-section .btn-secondary {
+            background-color: transparent;
+            color: var(--bg-white);
+            border-color: var(--bg-white);
+        }
+
+        .cta-section .btn-secondary:hover {
+            background-color: var(--bg-white);
+            color: var(--primary-navy);
+        }
+
+        /* === CONTACT SECTION === */
+        .contact-section {
+            background-color: var(--bg-light-grey);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+        }
+
+        .contact-info h2 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .contact-info > p {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .info-item {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .info-item h3 {
+            font-size: 1rem;
+            color: var(--secondary-gold);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .info-item p {
+            color: var(--text-muted);
+        }
+
+        /* === CONTACT FORM === */
+        .contact-form {
+            background-color: var(--bg-white);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+        }
+
+        .contact-form h3 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+            color: var(--primary-navy);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #D1D5DB;
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary-gold);
+        }
+
+        .contact-form button {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* === FOOTER === */
+        .footer {
+            background-color: var(--primary-navy);
+            color: var(--bg-white);
+            padding: var(--spacing-lg) 0 var(--spacing-md);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .footer-column h3,
+        .footer-column h4 {
+            color: var(--bg-white);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-tagline {
+            color: var(--secondary-gold);
+            font-size: 0.875rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-column p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.875rem;
+        }
+
+        .footer-column ul {
+            margin-top: var(--spacing-sm);
+        }
+
+        .footer-column li {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .footer-column a {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.875rem;
+            transition: color 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: var(--secondary-gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: var(--spacing-md);
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.875rem;
+        }
+
+        /* === RESPONSIVE DESIGN === */
+
+        /* Tablet */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                gap: var(--spacing-sm);
+            }
+            
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1.25rem;
+            }
+            
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .courses-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+            }
+            
+            .nav-menu {
+                font-size: 0.875rem;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .timeline-content {
+                text-align: center;
+            }
+            
+            .feature-item {
+                padding-left: 0;
+                text-align: center;
+            }
+            
+            .feature-number {
+                position: relative;
+                display: block;
+                margin-bottom: var(--spacing-sm);
+            }
+        }
+    </style>
 </head>
 <body>
-
-  <div class="card">
-    <h1>පන්තියට සම්බන්ධ වීමට...</h1>
     
-    <p>ජනවාරි 29 පැවැත්වෙන නොමිලේ සම්මන්ත්‍රණයේ <strong>Zoom Link</strong> එක ලබා ගැනීමට පහතින් ඇති WhatsApp Group එකට දැන්ම සම්බන්ධ වන්න.</p>
-    
-    <a class="btn" href="https://chat.whatsapp.com/JENDFwzAYuGHIGxKKe8BNy">
-      WHATSAPP GROUP එකට JOIN වන්න
-    </a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Lexora English Academy</h1>
+                    <p class="tagline">Clean English for Quick Progress</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#method">Learning Method</a></li>
+                    <li><a href="#outcomes">Student Progress</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="#contact" class="btn-primary">Enrol Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <p class="small">Lexora English Academy<br>සිසුන් 1000+ ක විශ්වාසය දිනූ ආයතනයකි.</p>
-  </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Lexora English Academy</h1>
+                <p class="hero-tagline">Clean English for Quick Progress</p>
+                <p class="hero-description">Learn English through memory-based techniques and mnemonics. Understand clearly, remember easily, and speak confidently.</p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn-primary">View All Courses</a>
+                    <a href="#method" class="btn-secondary">Our Method</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</body>
-</html>
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Learn English the Right Way</h2>
+                <p>Lexora English Academy offers a different approach to learning English. Instead of traditional grammar-heavy methods, we use memory-based techniques and mnemonics designed for fast, clear progress. Whether you are preparing for university, employment, or everyday conversation, our courses help you think in English without confusion or fear.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Discover Our Course Selection</h2>
+                <p>Lexora offers a range of programmes designed for different proficiency levels and goals. Our courses use memory techniques to help students grasp English naturally.</p>
+            </div>
+            
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">📚</div>
+                    <h3>Foundation English</h3>
+                    <p class="course-level">Beginner Level</p>
+                    <p>Build strong basics with sentence clarity and memory anchors. Perfect for students starting fresh or those with weak English foundations.</p>
+                    <ul class="course-features">
+                        <li>Duration: 8-12 weeks</li>
+                        <li>Clear sentence construction</li>
+                        <li>Memory-based vocabulary</li>
+                        <li>Speaking confidence building</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary">Learn More</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">✍️</div>
+                    <h3>Core English</h3>
+                    <p class="course-level">Intermediate Level</p>
+                    <p>Learn grammar through simple patterns and mnemonics. Build vocabulary that stays with you and develop real speaking confidence.</p>
+                    <ul class="course-features">
+                        <li>Duration: 10-12 weeks</li>
+                        <li>Grammar through mnemonics</li>
+                        <li>Vocabulary retention techniques</li>
+                        <li>Academic & professional English</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary">Learn More</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">💬</div>
+                    <h3>Advanced Spoken English</h3>
+                    <p class="course-level">Advanced Level</p>
+                    <p>Achieve fluency, clarity, and accuracy. Master real-life speaking situations and learn to think in English using proven memory frameworks.</p>
+                    <ul class="course-features">
+                        <li>Duration: 8-10 weeks</li>
+                        <li>Fluency & natural expression</li>
+                        <li>Thinking in English</li>
+                        <li>Professional communication</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary">Learn More</a>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">🎯</div>
+                    <h3>Special Workshops</h3>
+                    <p class="course-level">Intermediate to Advanced</p>
+                    <p>Short, focused sessions on speaking mastery, interview English, and presentation skills for academic and professional settings.</p>
+                    <ul class="course-features">
+                        <li>Duration: 4-6 weeks</li>
+                        <li>Interview English</li>
+                        <li>Presentation skills</li>
+                        <li>Speaking mastery</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Lexora Section -->
+    <section class="why-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Lexora English Academy?</h2>
+                <p>We provide quality English education designed specifically for Sri Lankan learners. Our courses focus on clarity, memory, and practical use.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <h3>Memory-Based Learning Method</h3>
+                    <p>Learn English using mnemonics and memory hooks that make grammar and vocabulary easy to remember.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <h3>Achieve Your Goals Faster</h3>
+                    <p>Our method focuses on quick progress with clean understanding, helping you speak confidently in weeks, not years.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <h3>Learn from Experienced Instructors</h3>
+                    <p>Our teachers understand the challenges Sri Lankan students face and use Sinhala-supported explanations when needed.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <h3>Flexible Course Options</h3>
+                    <p>Choose from beginner to advanced levels, with options for group classes and special workshops.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">05</div>
+                    <h3>Focus on Real Communication</h3>
+                    <p>Learn English that works in real life, from interviews and presentations to everyday conversations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>About Lexora English Academy</h2>
+                    <p>Lexora English Academy is a specialized English learning centre for Sri Lankan students who want to understand English clearly and speak confidently. We focus on memory-based learning techniques that
